@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Details from './components/Details'
 import About from './components/About'
 import Page404 from './components/page404'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         {/* <Route path="/details" element={<Details />}/> */}
         <Route path="/details/:id/:cosa" element={<Details />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/contact" element={<Contact />}/>
         <Route path="*" element={<Page404 />}/>
       </Routes>
     </BrowserRouter>
